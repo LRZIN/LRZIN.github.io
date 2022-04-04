@@ -1,0 +1,64 @@
+<html>
+    <body>
+        <center>
+            <p>Caio - Lorinho</p>
+            <audio id="audio" src="Click.mp3" style="display:none;"></audio>
+            <input id="cmd"><p>
+            <div class="bola" id="bola1"></div>
+            <div class="bola" id="bola2"></div>
+            <div class="bola" id="bola3"></div>
+            <div class="bola" id="bola4"></div>
+        </center>
+    </body>
+</html>
+                                                                                    <style>
+                                                                                    p{
+                                                                                      color:red;
+                                                                                      font-family: Courier;
+                                                                                      font-size: 40px;
+                                                                                    }
+                                                                                      .bola
+                                                                                      {
+                                                                                        background: black;
+                                                                                        border-radius: 50%;
+                                                                                        width: 100px;
+                                                                                        height: 100px;
+                                                                                        margin: 2px ;
+                                                                                        border: 2px solid red;
+                                                                                      }
+                                                                                      #cmd
+                                                                                      {
+                                                                                        width: 400px;
+                                                                                        height: 50px;
+                                                                                        font-family: Courier;
+                                                                                        border: 2px solid red;
+                                                                                        box-shadow: 5px 5px 100px red;
+                                                                                        background: black;
+                                                                                        color:red;
+                                                                                        border-radius: 10px;
+                                                                                        font-size: 30px;
+                                                                                      }
+                                                                                      body{
+                                                                                        background: black;
+                                                                                      }
+                                                                                    </style>
+                           <script>
+                            
+                             var bola1 = document.querySelector('#bola1');
+                             var bola2 = document.querySelector('#bola2');
+                             var bola3 = document.querySelector('#bola3');
+                             var bola4 = document.querySelector('#bola4');
+                             var cmd = document.querySelector('#cmd');
+                             var audio = document.querySelector('#audio');
+                             
+                             function bolaa(){bola1.style.backgroundColor = cmd.value; audio.play()};
+                             function bolab(){bola2.style.backgroundColor = cmd.value; audio.play()};
+                             function bolac(){bola3.style.backgroundColor = cmd.value; audio.play()};
+                             function bolad(){bola4.style.backgroundColor = cmd.value; audio.play()};
+                             
+                             
+                            bola1.addEventListener('click', bolaa);
+                            bola2.addEventListener('click', bolab);
+                            bola3.addEventListener('click', bolac);
+                            bola4.addEventListener('click', bolad);
+                           </script>
