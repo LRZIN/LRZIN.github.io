@@ -1,66 +1,40 @@
 <html>
-    <head>
-      <title>Gamer dos cliques</title>
-    </head>
+  <head>
+     <title>Gamer dos cliques</title>
+     <link href="Gamer.css" rel="stylesheet">
+   </head>
     <body>
         <center>
-            <audio id="audio" src="Click.mp3" style="display:none;"></audio>
-            <input id="cmd"><p>
-            <div class="bola" id="bola1"></div>
-            <div class="bola" id="bola2"></div>
-            <div class="bola" id="bola3"></div>
-            <div class="bola" id="bola4"></div>
+          <div id="main">
+               <audio id="audio" src="Click.mp3" style="display:none;"></audio>
+               <input id="cmd"><p>
+            <div id="bolas">
+                 <div id="bolas1">
+                     <div class="bola" id="bola1"></div>
+                     <div class="bola" id="bola2"></div>
+                     <div class="bola" id="bola3"></div>
+                     <div class="bola" id="bola4"></div>
+                     <br>
+                 </div>
+              <p>   
+                 <div id="bolas2">
+                     <div class="bola" id="bola5"></div>
+                     <div class="bola" id="bola6"></div>
+                     <div class="bola" id="bola7"></div>
+                     <div class="bola" id="bola8"></div>
+                 </div>
+              <p>
+                 <div id="bolas3">
+                     <div class="bola" id="bola9"></div>
+                     <div class="bola" id="bola10"></div>
+                     <div class="bola" id="bola11"></div>
+                     <div class="bola" id="bola12"></div>
+                 </div>
+                 <p>
+                 <button id="btnL" onclick="limpar()">Limpar</button>
+            </div>
+          </div>
         </center>
     </body>
 </html>
-                                                                                    <style>
-                                                                                    p{
-                                                                                      color:red;
-                                                                                      font-family: Courier;
-                                                                                      font-size: 40px;
-                                                                                    }
-                                                                                      .bola
-                                                                                      {
-                                                                                        background: black;
-                                                                                        border-radius: 50%;
-                                                                                        width: 100px;
-                                                                                        height: 100px;
-                                                                                        margin: 2px ;
-                                                                                        border: 2px solid red;
-                                                                                      }
-                                                                                      #cmd
-                                                                                      {
-                                                                                        width: 400px;
-                                                                                        height: 50px;
-                                                                                        font-family: Courier;
-                                                                                        border: 2px solid red;
-                                                                                        box-shadow: 5px 5px 100px red;
-                                                                                        background: black;
-                                                                                        color:red;
-                                                                                        border-radius: 10px;
-                                                                                        font-size: 30px;
-                                                                                      }
-                                                                                      body{
-                                                                                        background: black;
-                                                                                      }
-                                                                                    </style>
-                           <script>
-                            
-                             var bola1 = document.querySelector('#bola1');
-                             var bola2 = document.querySelector('#bola2');
-                             var bola3 = document.querySelector('#bola3');
-                             var bola4 = document.querySelector('#bola4');
-                             var cmd = document.querySelector('#cmd');
-                             var audio = document.querySelector('#audio');
-                             
-                             function bolaa(){bola1.style.backgroundColor = cmd.value; audio.play(); bola1.style.border = '1px solid black'};
-                             function bolab(){bola2.style.backgroundColor = cmd.value; audio.play(); bola2.style.border = '1px solid black'};
-                             function bolac(){bola3.style.backgroundColor = cmd.value; audio.play(); bola3.style.border = '1px solid black'};
-                             function bolad(){bola4.style.backgroundColor = cmd.value; audio.play(); bola4.style.border = '1px solid black'};
-                             
-                             
-                            bola1.addEventListener('click', bolaa);
-                            bola2.addEventListener('click', bolab);
-                            bola3.addEventListener('click', bolac);
-                            bola4.addEventListener('click', bolad);
-                           </script>
+<script src="Gamer.js"></script>
