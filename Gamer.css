@@ -1,74 +1,112 @@
-                                                                                      .bola
-                                                                                      {
-                                                                                        background: black;
-                                                                                        border-radius: 50%;
-                                                                                        width: 100px;
-                                                                                        height: 100px;
-                                                                                        margin:3px;
-                                                                                        border: 3px solid white;
-                                                                                        cursor: pointer;
-                                                                                      }
-                                                                                      #cmd
-                                                                                      {
-                                                                                        width: 400px;
-                                                                                        height: 50px;
-                                                                                        font-family: Courier;
-                                                                                        border: 2px solid red;
-                                                                                        box-shadow: 5px 5px 100px red;
-                                                                                        background: black;
-                                                                                        color:red;
-                                                                                        border-radius: 10px;
-                                                                                        font-size: 30px;
-                                                                                      }
-                                                                                      body{
-                                                                                        background: black;
-                                                                                      }
-                                                                                      #main
-                                                                                      {
-                                                                                        margin-top:50px;
-                                                                                      }
-                                                                                      #bolas{
-                                                                                        margin-top:50px;
-                                                                                      }
-                                                                                      #bolas1
-                                                                                      {
-                                                                                        display: flex;
-                                                                                        margin-left: 540px;
-                                                                                      }
-                                                                                      #bolas2{
-                                                                                        display: flex;
-                                                                                        margin-left:540px;
-                                                                                      }
-                                                                                      #bolas3
-                                                                                      {
-                                                                                        display: flex;
-                                                                                        margin-left:540px;
-                                                                                      }
-                                                                                      #btnL
-                                                                                      {
-                                                                                        width: 200px;
-                                                                                        height: 50px;
-                                                                                        font-family: Courier;
-                                                                                        border: 2px solid red;
-                                                                                        box-shadow: 5px 5px 100px red;
-                                                                                        background: black;
-                                                                                        color:red;
-                                                                                        border-radius: 10px;
-                                                                                        font-size: 30px;
-                                                                                        margin-top: 100px;
-                                                                                      }
-                                                                                      #btnL:hover
-                                                                                      {
-                                                                                        width: 210px;
-                                                                                        height: 60px;
-                                                                                        font-family: Courier;
-                                                                                        border: 2px solid red;
-                                                                                        box-shadow: 5px 5px 100px red;
-                                                                                        background: black;
-                                                                                        color:red;
-                                                                                        border-radius: 10px;
-                                                                                        font-size: 35px;
-                                                                                        margin-top: 100px;
-                                                                                      }
+.bola
+{
+background: black;
+border-radius: 0px;
+width: 100px;
+height: 100px;
+margin:;
+border: 3px solid white;
+cursor: pointer;
+}
+.bola:hover
+{
+border-radius:0px;
+animation: rotate 4s infinite;
+}
+@keyframes rotate{
+  100%{transform: rotate(360deg);}
+}
+#cmd
+{
+width: 500px;
+height: 70px;
+font-family: Courier;
+border: 2px solid red;
+box-shadow: 5px 5px 100px red;
+background: black;
+color:red;
+border-radius: 10px;
+font-size: 30px;
+}
+body{
+background: black;
+}
+#main
+{
+margin-top:50px;
+}
+#bolas{
+margin-top:50px;
+}
+#bolas1
+{
+display: flex;
+margin-left: 540px;
+}
+#bolas2
+{
+display: flex;
+margin-left:540px;
+}
+#bolas3
+{
+display: flex;
+margin-left:540px;
+}
+#bolas4
+{
+display: flex;
+margin-left:540px;
+}
+#btnL
+{
+width: 250px;
+height: 70px;
+font-family: Courier;
+border: 2px solid red;
+box-shadow: 5px 5px 100px red;
+background: black;
+color:red;
+border-radius: 10px;
+font-size: 30px;
+margin-top: 100px;
+}
+
+#ads
+{
+  width: 700px;
+  height: 500px;
+  border-radius: 30px;
+  border:3px solid red;
+  position: relative;
+  top:-690px;
+  background: black;
+}
+#btnA
+{
+  width: 40px;
+  height: 40px;
+  border: 3px solid red;
+  color:red;
+  border-radius: 50%;
+  background: black;
+  font-size: 30px;
+  position: relative;
+  margin-left: 600px;
+  top:20px;
+  cursor: pointer;
+}
+#iframe1
+{
+  width: 700px;
+  height: 500px;
+  border-radius: 30px;
+  border:none;
+  background: black;
+  margin-top: -40px;
+}
+
+
+
                                                                                       
                                                                                       
